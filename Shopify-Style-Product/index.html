@@ -1,0 +1,275 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Page</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/theme-overrides.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <main class="product-page">
+
+            <!-- Product Gallery -->
+            <section class="product-gallery">
+                <div class="thumbnails">
+                    <!-- 10 scrollable thumbnails -->
+                    <img src="https://placehold.co/400x400?text=Image+1" alt="Thumb 1" class="thumb active" />
+                    <img src="https://placehold.co/400x400?text=Image+2" alt="Thumb 2" class="thumb" />
+                    <img src="https://placehold.co/400x400?text=Image+3" alt="Thumb 3" class="thumb" />
+                    <img src="https://placehold.co/400x400?text=Image+4" alt="Thumb 4" class="thumb" />
+                    <img src="https://placehold.co/400x400?text=Image+5" alt="Thumb 5" class="thumb" />
+                    <img src="https://placehold.co/400x400?text=Image+6" alt="Thumb 6" class="thumb" />
+                    <img src="https://placehold.co/400x400?text=Image+7" alt="Thumb 7" class="thumb" />
+                    <img src="https://placehold.co/400x400?text=Image+8" alt="Thumb 8" class="thumb" />
+                    <img src="https://placehold.co/400x400?text=Image+9" alt="Thumb 9" class="thumb" />
+                    <img src="https://placehold.co/400x400?text=Image+10" alt="Thumb 10" class="thumb" />
+                </div>
+                <div class="main-image">
+                    <img id="mainProductImage" src="https://placehold.co/400x400?text=Image+1" alt="Main Product" />
+                </div>
+            </section>
+
+            <!-- Product Options -->
+            <section class="product-options">
+                <button id="sizeChartBtn">Size Chart</button>
+            </section>
+
+            <!-- Product Variants -->
+            <section class="variant-selectors">
+                <div class="variant-group">
+                    <h3>Select Color</h3>
+                    <div class="color-options">
+                        <button class="color-swatch color-black" data-color="black" type="button"
+                            aria-label="Select Black Color"></button>
+                        <button class="color-swatch color-red" data-color="red" type="button"
+                            aria-label="Select Red Color"></button>
+                        <button class="color-swatch color-blue" data-color="blue" type="button"
+                            aria-label="Select Blue Color"></button>
+                    </div>
+                    <!-- Compare Colors Button -->
+                    <button id="compareColorsBtn">Compare Colours</button>
+                </div>
+
+                <div class="variant-group">
+                    <h3>Select Size</h3>
+                    <div class="size-options">
+                        <button class="size-button" data-size="S" type="button">S</button>
+                        <button class="size-button" data-size="M" type="button">M</button>
+                        <button class="size-button" data-size="L" type="button">L</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="pair-well-section">
+                <h2>Pair Well With</h2>
+                <div class="pair-carousel">
+                    <!-- Product 1 -->
+                    <div class="pair-card">
+                        <img src="https://placehold.co/200x200?text=Product+1" alt="Product 1">
+                        <h4>Accessory A</h4>
+                        <p>$19.99</p>
+                        <button>Add to Cart</button>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="pair-card">
+                        <img src="https://placehold.co/200x200?text=Product+2" alt="Product 2">
+                        <h4>Accessory B</h4>
+                        <p>$24.99</p>
+                        <button>Add to Cart</button>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="pair-card">
+                        <img src="https://placehold.co/200x200?text=Product+3" alt="Product 3">
+                        <h4>Accessory C</h4>
+                        <p>$29.99</p>
+                        <button>Add to Cart</button>
+                    </div>
+
+                    <div class="pair-card">
+                        <img src="https://placehold.co/200x200?text=Product+4" alt="Product 4">
+                        <h4>Accessory D</h4>
+                        <p>$21.99</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="pair-card">
+                        <img src="https://placehold.co/200x200?text=Product+5" alt="Product 5">
+                        <h4>Accessory E</h4>
+                        <p>$18.99</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="pair-card">
+                        <img src="https://placehold.co/200x200?text=Product+6" alt="Product 6">
+                        <h4>Accessory F</h4>
+                        <p>$22.99</p>
+                        <button>Add to Cart</button>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="bundle-section">
+                <h2>Buy These Together</h2>
+                <div class="bundle-items">
+                    <!-- Product 1 -->
+                    <div class="bundle-item">
+                        <input type="checkbox" class="bundle-checkbox" data-price="39.99" checked />
+                        <img src="https://placehold.co/100x100?text=Item+1" alt="Item 1">
+                        <div>
+                            <p>Product A</p>
+                            <span>$39.99</span>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="bundle-item">
+                        <input type="checkbox" class="bundle-checkbox" data-price="29.99" checked />
+                        <img src="https://placehold.co/100x100?text=Item+2" alt="Item 2">
+                        <div>
+                            <p>Product B</p>
+                            <span>$29.99</span>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="bundle-item">
+                        <input type="checkbox" class="bundle-checkbox" data-price="19.99" checked />
+                        <img src="https://placehold.co/100x100?text=Item+3" alt="Item 3">
+                        <div>
+                            <p>Product C</p>
+                            <span>$19.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bundle-summary">
+                    <p><strong>Total: $<span id="bundleTotal">89.97</span></strong></p>
+                    <button id="addBundleBtn">Add Bundle to Cart</button>
+                </div>
+
+                <!-- ✅ Confirmation Modal -->
+                <div id="bundleModal" class="modal hidden">
+                    <div class="modal-content">
+                        <span class="close-btn" id="closeBundleModal">&times;</span>
+                        <h3>Bundle added to cart!</h3>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="tabbed-info-section">
+                <div class="tabs">
+                    <button class="tab active" data-tab="description">Description</button>
+                    <button class="tab" data-tab="info">Product Information</button>
+                    <button class="tab" data-tab="shipping">Shipping Details</button>
+                </div>
+
+                <div class="tab-content" id="description">
+                    <p>This is a beautifully crafted product made from premium materials. Designed for comfort and
+                        durability.</p>
+                </div>
+
+                <div class="tab-content hidden" id="info">
+                    <ul>
+                        <li>Material: 100% Cotton</li>
+                        <li>Fit: Regular</li>
+                        <li>Care: Machine Wash</li>
+                    </ul>
+                </div>
+
+                <div class="tab-content hidden" id="shipping">
+                    <p>Ships within 1-2 business days. Free returns within 30 days.</p>
+                </div>
+            </section>
+
+
+            <section class="related-products-section container">
+                <h2>Related Products</h2>
+                <div class="related-products-grid">
+                    <div class="related-product-card">
+                        <div class="badge">New</div>
+                        <img src="https://placehold.co/200x200?text=Product+1" alt="Product 1" />
+                        <h3>Product 1</h3>
+                        <p class="price">$29.99</p>
+                    </div>
+                    <div class="related-product-card">
+                        <div class="badge">Popular</div>
+                        <img src="https://placehold.co/200x200?text=Product+2" alt="Product 2" />
+                        <h3>Product 2</h3>
+                        <p class="price">$39.99</p>
+                    </div>
+                    <div class="related-product-card">
+                        <!-- No badge -->
+                        <img src="https://placehold.co/200x200?text=Product+3" alt="Product 3" />
+                        <h3>Product 3</h3>
+                        <p class="price">$19.99</p>
+                    </div>
+                    <div class="related-product-card">
+                        <div class="badge">New</div>
+                        <img src="https://placehold.co/200x200?text=Product+4" alt="Product 4" />
+                        <h3>Product 4</h3>
+                        <p class="price">$49.99</p>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Size Chart Modal -->
+            <div id="sizeChartModal" class="modal hidden">
+                <div class="modal-content">
+                    <span class="close-btn" id="closeSizeChart">&times;</span>
+                    <h2>Size Chart</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Size</th>
+                                <th>Chest (in)</th>
+                                <th>Waist (in)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>S</td>
+                                <td>34–36</td>
+                                <td>28–30</td>
+                            </tr>
+                            <tr>
+                                <td>M</td>
+                                <td>38–40</td>
+                                <td>32–34</td>
+                            </tr>
+                            <tr>
+                                <td>L</td>
+                                <td>42–44</td>
+                                <td>36–38</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Compare Colours Modal -->
+            <div id="compareColorsModal" class="modal hidden">
+                <div class="modal-content">
+                    <span class="close-btn" id="closeCompareModal">&times;</span>
+                    <h2>Compare Colours</h2>
+                    <div id="compareSwatches" class="compare-swatches">
+                        <!-- Selected swatches will be injected here -->
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

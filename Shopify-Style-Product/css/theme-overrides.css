@@ -1,0 +1,113 @@
+/* Background with your gradient colors */
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(
+    -45deg,
+    #36413e,
+    /* outer-space */ #5d5e60,
+    /* davys-gray */ #8d8d92,
+    /* taupe-gray */ #beb2c8,
+    /* thistle */ #d7d6d6 /* timberwolf */
+  );
+  background-size: 400% 400%;
+  animation: gradientShift 20s ease infinite;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #f0f0f0; /* light text for contrast */
+  min-height: 100vh;
+}
+
+/* Gradient animation */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Remove container backgrounds & shadows for clean overlay */
+.container,
+.section,
+.tabbed-info-section,
+.related-products,
+.related-products p,
+.related-products span,
+.bundle-section,
+.bundle-section span,
+.bundle-section p {
+  background: transparent !important;
+  backdrop-filter: none !important;
+  box-shadow: none !important;
+  border: none !important;
+
+  color: #000000; /* Dark black text */
+  font-size: 1.1rem; /* Slightly larger font */
+  line-height: 1.5; /* Better line spacing */
+}
+
+/* Ensure full width and height */
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+/* Padding around main content */
+main {
+  padding: 2rem;
+}
+.related-product-card,
+.pair-card,
+.pair-card h4,
+.pair-card p {
+  background-color: #b0b0aa;
+  color: #000000; /* Dark black text */
+  font-size: 1.1rem; /* Slightly larger font */
+  line-height: 1.5;
+}
+.related-product-card .price {
+  color: #000000; /* black */
+}
+.tabbed-info-section .tabs .tab {
+  background-color: #b0b0aa;
+  color: black;
+  border: none;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+.tabbed-info-section .tabs .tab.active {
+  background-color: #333; /* or your active tab color */
+  color: white;
+}
+.tab-content p {
+  color: #000000; /* dark black */
+  font-size: 1.1rem; /* slightly larger */
+  line-height: 1.6;
+}
+.tab-content ul {
+  color: #000000; /* dark black text */
+  font-size: 1.1rem; /* slightly larger font */
+  line-height: 1.6; /* better vertical spacing */
+  padding-left: 20px; /* indentation for list */
+}
+
+.tab-content li {
+  margin-bottom: 8px; /* space between list items */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 90%;
+  }
+  main {
+    padding: 1rem;
+  }
+}
